@@ -1,2 +1,5 @@
 # .out ファイルは除外
 *.out
+
+# .vscode
+.vscode
