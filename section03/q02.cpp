@@ -7,15 +7,13 @@ int main(){
     vector<int> a(N);
     for(int i=0; i<N; ++i) cin >> a[i];
 
-    bool exist = false;
+    int found_id = -1;
     for(int i=0; i<N; ++i){
         if(a[i] == v){
-            exist = true;
+            found_id = i;
+            break;
         }
     }
 
-    if(exist) cout << "Yes" << endl;
-    else cout << "No" << endl;
-
-    return 0;
+    cout << found_id << endl;
 }
