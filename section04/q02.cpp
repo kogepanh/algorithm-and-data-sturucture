@@ -1,3 +1,5 @@
+// 再帰による総和計算
+
 #include <bits/stdc++.h>
 using namespace std;
 
