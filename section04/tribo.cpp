@@ -3,24 +3,19 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-int tribo(int n)
-{
-    if (n == 0)
-        return 0;
-    if (n == 1)
-        return 0;
-    if (n == 2)
-        return 1;
+int tribo(int n) {
+  if (n == 0) return 0;
+  if (n == 1) return 0;
+  if (n == 2) return 1;
 
-    return tribo(n - 1) + tribo(n - 2) + tribo(n - 3);
+  return tribo(n - 1) + tribo(n - 2) + tribo(n - 3);
 }
 
-int main()
-{
-    int N;
-    cin >> N;
+int main() {
+  int N;
+  cin >> N;
 
-    cout << tribo(N) << endl;
+  cout << tribo(N) << endl;
 
-    return 0;
+  return 0;
 }

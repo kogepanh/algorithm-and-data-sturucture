@@ -3,22 +3,19 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-int func(int N)
-{
-    cout << "func(" << N << ") を呼び出しました" << endl;
+int func(int N) {
+  cout << "func(" << N << ") を呼び出しました" << endl;
 
-    if (N == 0)
-        return 0;
+  if (N == 0) return 0;
 
-    int result = N + func(N - 1);
-    cout << N << " までの和 = " << result << endl;
+  int result = N + func(N - 1);
+  cout << N << " までの和 = " << result << endl;
 
-    return result;
+  return result;
 }
 
-int main()
-{
-    func(5);
+int main() {
+  func(5);
 
-    return 0;
+  return 0;
 }
